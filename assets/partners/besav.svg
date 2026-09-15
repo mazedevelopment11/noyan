@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+  <g fill="none" stroke="#232D3F" stroke-linecap="round">
+    <path d="M44 20 A22 22 0 1 0 44 60" stroke-width="5"/>
+    <path d="M40 27 A15 15 0 1 0 40 53" stroke-width="2.5" opacity=".55"/>
+  </g>
+  <text x="38" y="53" font-family="Arial Black, Helvetica Neue, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="1" fill="#232D3F">BESAV</text>
+  <text x="178" y="23" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="9" letter-spacing="1.5" fill="#232D3F">KABLO</text>
+</svg>

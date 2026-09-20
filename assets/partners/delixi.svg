@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
-  <circle cx="40" cy="40" r="19" fill="none" stroke="#232D3F" stroke-width="4"/>
-  <text x="40" y="47" text-anchor="middle" font-family="Arial Black, Helvetica Neue, Arial, sans-serif" font-weight="900" font-size="20" fill="#232D3F">D</text>
-  <text x="70" y="46" font-family="Arial Black, Helvetica Neue, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="1.5" fill="#232D3F">DELIXI</text>
-  <text x="71" y="62" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="9" letter-spacing="6.2" fill="#232D3F">ELECTRIC</text>
+  <rect x="8" y="16" width="224" height="48" fill="#D7101A"/>
+  <rect x="14" y="22" width="212" height="36" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+  <text x="120" y="51" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="30" letter-spacing="2" fill="#FFFFFF">DELIXI</text>
 </svg>

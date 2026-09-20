@@ -1,4 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
-  <path d="M34 14 L22 42 H33 L27 66 L48 34 H37 L44 14 Z" fill="#232D3F"/>
-  <text x="62" y="54" font-family="Arial Black, Helvetica Neue, Arial, sans-serif" font-weight="900" font-size="38" letter-spacing="4" fill="#232D3F">SWE</text>
+  <text x="120" y="58" text-anchor="middle" font-family="'Arial Black', 'Helvetica Neue', Helvetica, sans-serif" font-weight="900" font-style="italic" font-size="46" letter-spacing="-1" fill="#D9351F">SWE</text>
 </svg>

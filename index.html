@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Noyan General Trading</title>
-<meta name="description" content="Noyan General Trading Company — electrical supplies and general trading in Kurdistan. Main distributor of Besav Kablo, SWE, Erka Kablo and Delixi.">
+<meta name="description" content="Noyan General Trading Company — electrical supplies and general trading in Kurdistan. Main distributor of Delixi, Erka Kablo, Vini-Tape, GC, SWE and Besav Kablo.">
 <meta name="theme-color" content="#232D3F">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="assets/noyan-icon-white.svg" type="image/svg+xml">
@@ -89,20 +89,22 @@
 
   .partners { width: 100%; max-width: 980px; display: grid; gap: 14px; }
   .partners-label { font-size: 11px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: var(--mist); }
-  .partner-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(8px, 1.4vw, 16px); list-style: none; margin: 0; padding: 0; }
+  .partner-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: clamp(8px, 1.2vw, 14px); list-style: none; margin: 0; padding: 0; }
   .partner-row li {
     min-width: 0;
-    aspect-ratio: 3 / 1;
+    aspect-ratio: 5 / 3;
     display: grid; place-items: center;
-    padding: 6px clamp(6px, 1.6vw, 18px);
-    transition: transform .25s ease, opacity .25s ease;
+    padding: clamp(8px, 1.4vw, 16px);
+    background: rgba(255, 255, 255, .82);
+    border: 1px solid rgba(255, 255, 255, .55);
+    border-radius: 4px;
+    -webkit-backdrop-filter: blur(10px) saturate(1.1);
+    backdrop-filter: blur(10px) saturate(1.1);
+    box-shadow: 0 12px 30px -16px rgba(0, 0, 0, .55);
+    transition: transform .25s ease, background .25s ease;
   }
-  .partner-row li:hover { transform: translateY(-3px); }
-  /* Any logo file dropped in renders as solid white */
-  .partner-row img {
-    width: 100%; height: 100%; min-width: 0; object-fit: contain;
-    filter: brightness(0) invert(1) drop-shadow(0 2px 10px rgba(0,0,0,.35));
-  }
+  .partner-row li:hover { transform: translateY(-3px); background: rgba(255, 255, 255, .92); }
+  .partner-row img { width: 100%; height: 100%; min-width: 0; object-fit: contain; }
 
   .album-meta {
     position: absolute; left: 0; right: 0; bottom: 18px;
@@ -162,6 +164,7 @@
 
   /* ---------- Responsive ---------- */
   @media (max-width: 860px) {
+    .partner-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .about .wrap, .contact .wrap { grid-template-columns: minmax(0, 1fr); }
     .values ul { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 28px; }
     .values li:nth-child(3) { border-left: 0; padding-left: 0; }
@@ -170,6 +173,7 @@
     .top-nav { display: none; }
     .hero { min-height: auto; padding-block: 96px 64px; }
     .partner-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .partners { max-width: 360px; }
     .rule { gap: 8px; letter-spacing: .14em; }
     .rule::before, .rule::after { height: 3px; }
     .supply li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
@@ -221,10 +225,12 @@
       <div class="partners" id="partners">
         <p class="partners-label">Main distributor of</p>
         <ul class="partner-row">
-          <li><img src="assets/partners/besav.svg" alt="Besav Kablo"></li>
+          <li><img src="assets/partners/delixi.svg" alt="Delixi"></li>
+          <li><img src="assets/partners/erka.png" alt="Erka Kablo" width="500" height="150"></li>
+          <li><img src="assets/partners/vini-tape.svg" alt="Vini-Tape"></li>
+          <li><img src="assets/partners/gc.svg" alt="GC"></li>
           <li><img src="assets/partners/swe.svg" alt="SWE"></li>
-          <li><img src="assets/partners/erka-kablo.svg" alt="Erka Kablo"></li>
-          <li><img src="assets/partners/delixi.svg" alt="Delixi Electric"></li>
+          <li><img src="assets/partners/besav.svg" alt="Besav Kablo"></li>
         </ul>
       </div>
     </div>
@@ -244,12 +250,13 @@
         <h2 class="display">Power cable, wire and switchgear — sourced direct from the factory floor.</h2>      </div>
       <div>
         <p class="lead">Noyan is a general trading company supplying electrical materials to contractors, projects and wholesalers across Kurdistan and Iraq.</p>
-        <p>As the main distributor for Besav Kablo, SWE, Erka Kablo and Delixi, we move certified products from manufacturer to site — stocked, documented and delivered on schedule.</p>
+        <p>As the main distributor for Delixi, Erka Kablo, Vini-Tape, GC, SWE and Besav Kablo, we move certified products from manufacturer to site — stocked, documented and delivered on schedule.</p>
         <ul class="supply">
           <li><strong>Energy cables</strong><span>Copper &amp; aluminium, LV / MV</span></li>
           <li><strong>Building wire</strong><span>Harmonised H07V-U, NYM, NYY</span></li>
           <li><strong>Conductors &amp; wire rod</strong><span>Bare, tinned, copper &amp; aluminium</span></li>
           <li><strong>Switchgear &amp; protection</strong><span>Breakers, contactors, panels</span></li>
+          <li><strong>Insulation tape &amp; accessories</strong><span>PVC tape, ties, site consumables</span></li>
         </ul>
       </div>
     </div>

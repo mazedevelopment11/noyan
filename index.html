@@ -317,6 +317,7 @@
       dots.children[i].removeAttribute('aria-current');
       i = (n + total) % total;
       imgs[i].loading = 'eager';
+      imgs[(i + 1) % total].loading = 'eager'; // warm only the next one
       imgs[i].classList.add('is-on');
       dots.children[i].setAttribute('aria-current', 'true');
       counter.textContent = pad(i + 1) + ' / ' + pad(total);
@@ -324,8 +325,7 @@
     function restart() { clearInterval(timer); timer = setInterval(function () { show(i + 1); }, 5500); }
 
     dots.children[0].setAttribute('aria-current', 'true');
-    // warm the next photos so crossfades never flash
-    imgs.forEach(function (im) { im.loading = 'eager'; });
+    imgs[1].loading = 'eager';
     restart();
     document.addEventListener('visibilitychange', function () { document.hidden ? clearInterval(timer) : restart(); });
   })();
